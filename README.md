@@ -45,7 +45,7 @@ git clone https://github.com/gitcoinco/passport.git
 cd passport
 npm install --global lerna
 lerna init
-lerna bootstrap
+yarn install
 ```
 
 2. Create environment files, and replace environment variables with your own values
