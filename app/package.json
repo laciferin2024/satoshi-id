@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "prestart": "ceramic daemon",
     "start": "next dev",
     "export": "next build && next export",
     "build": "next build",

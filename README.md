@@ -77,7 +77,7 @@ The web app allowing users to interact with their Gitcoin Passport. [README](app
 
 ## database-client
 
-Contains database connection implementations. Currently supports Ceramic Network. [README](database-client/README.md)
+Contains database connection implementations. Currently supports Ceramic Network. [README](database-client/README.md)p
 
 ## iam
 
