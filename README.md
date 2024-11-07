@@ -98,3 +98,10 @@ Ceramic schemas and model definitions, and scripts for creating and publishing t
 ## types
 
 Shared type definitions. [README](types/README.md)
+
+## Late dev doc
+
+Duplex error: https://github.com/ipfs/js-ipfs-utils/issues/249
+
+its a ceramic issue 
+

@@ -23,7 +23,7 @@
     "test": "yarn node --experimental-vm-modules $(yarn bin jest) -c jest.config.cjs"
   },
   "dependencies": {
-    "@ceramicnetwork/http-client": "^2.2.1",
+    "@ceramicnetwork/http-client": "6.4.0",
     "@gitcoin/passport-schemas": "^1.0.0",
     "@glazed/datamodel": "^0.3.0",
     "@glazed/did-datastore": "^0.3.1",
