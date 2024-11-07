@@ -28,7 +28,7 @@ import {
   NftPlatform,
   ZkSyncPlatform,
   LensPlatform,
-  GnosisSafePlatform,
+  GnosisSafePlatform, BabylonPlatform,
 } from "./PlatformCards";
 import { SideBarContent } from "./SideBarContent";
 
@@ -98,6 +98,8 @@ export const CardList = ({ isLoading = false }: CardListProps): JSX.Element => {
   // Add the platforms to this switch so the sidebar content can populate dynamically
   const renderCurrentPlatformSelection = () => {
     switch (currentPlatform?.platform) {
+      case "Babylon":
+        return <BabylonPlatform />;
       case "Twitter":
         return <TwitterPlatform />;
       case "Github":

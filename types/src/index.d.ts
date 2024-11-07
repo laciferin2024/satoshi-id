@@ -163,7 +163,8 @@ export type PLATFORM_ID =
   | "NFT"
   | "ZkSync"
   | "Lens"
-  | "GnosisSafe";
+  | "GnosisSafe"
+  | "Babylon"
 
 export type PROVIDER_ID =
   | "Signer"
@@ -227,4 +228,7 @@ export type PROVIDER_ID =
   | "NFT"
   | "ZkSync"
   | "Lens"
-  | "GnosisSafe";
+  | "GnosisSafe"
+  | "Babylon#stake1week"
+  | "Babylon#stake2week"
+  | "Babylon#stake3week"
