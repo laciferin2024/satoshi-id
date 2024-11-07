@@ -1,0 +1,9 @@
+POST https://localhost:80/api/v0.0.0/challenge
+Content-Type: application/json
+
+{
+  "payload": {
+    "address": "0x71C7656EC7ab88b098defB751B7401B5f6d8976F",
+    "type": "Simple"
+  }
+}
