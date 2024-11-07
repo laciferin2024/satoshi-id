@@ -25,6 +25,12 @@ export const initWeb3Onboard = init({
       label: "Ethereum Mainnet",
       rpcUrl: MAINNET_RPC_URL,
     },
+    {
+      id: process.env.NEXT_PUBLIC_CHAIN_ID || "0x650",
+      token: "ETH",
+      label: "SatId Network",
+      rpcUrl: MAINNET_RPC_URL
+    }
   ],
   appMetadata: {
     name: "Passport",

@@ -87,11 +87,14 @@ export const UserContextProvider = ({ children }: { children: any }) => {
   // Force user on to Mainnet
   const ensureMainnet = async (): Promise<boolean | undefined> => {
     if (wallet && web3Onboard) {
+      const chainId = process.env.NEXT_PUBLIC_CHAIN_ID ?? "0x650"
+      console.log({chainId})
+
       // check if wallet is on mainnet
-      if ((await wallet.provider.request({ method: "eth_chainId" })) !== "0x1") {
+      if ((await wallet.provider.request({ method:  "eth_chainId" })) !== chainId) {
         try {
           // if its not, request that the user moves to mainnet
-          return await web3Onboard.setChain({ chainId: "0x1" });
+          return await web3Onboard.setChain({ chainId });
         } catch (e) {
           // if they cancel, return false
           return false;

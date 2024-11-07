@@ -1,0 +1,46 @@
+{
+  "chainInfo": {
+    "minL2BaseFee": 100000000,
+    "networkFeeReceiver": "0x2ABD1AB55F4BE0C4ce8354380aE153BCb66Da8D4",
+    "infrastructureFeeCollector": "0x2ABD1AB55F4BE0C4ce8354380aE153BCb66Da8D4",
+    "batchPoster": "0x6dd2C5005DA02532013d3ef9abA673418dC21247",
+    "staker": "0x4519bf33500C9373Ab05165D250924319EaBedb6",
+    "chainOwner": "0x823531B7c7843D8c3821B19D70cbFb6173b9Cb02",
+    "chainName": "metafountain",
+    "chainId": 1616,
+    "parentChainId": 11155111,
+    "rpcUrl": "https://metafountain.alt.technology",
+    "explorerUrl": "https://metafountain-explorer.alt.technology",
+    "nativeToken": "0x0000000000000000000000000000000000000000"
+  },
+  "coreContracts": {
+    "rollup": "0x47BB1251c7d3206bcb62116184A3627D62A90d3c",
+    "inbox": "0x0e7dA91a4C0122e18842dC2AAdacB358E641B0b6",
+    "outbox": "0x6814cA1467EC548df2094A71b63A33F554E03dd3",
+    "adminProxy": "0x0fAeAEd8A5aa5F0030eE83fBcaFA455445CBA6F6",
+    "sequencerInbox": "0xA2cDc0e14C8B902AbB8fe70b18b3583232cf1956",
+    "bridge": "0x7C01A042f3Ab4E1Ec864933106B3F4d6231dA84c",
+    "utils": "0xb33Dca7b17c72CFC311D68C543cd4178E0d7ce55",
+    "validatorWalletCreator": "0x75500812ADC9E51b721BEa31Df322EEc66967DDF"
+  },
+  "tokenBridgeContracts": {
+    "l2Contracts": {
+      "customGateway": "0x0000000000000000000000000000000000000000",
+      "multicall": "0x0000000000000000000000000000000000000000",
+      "proxyAdmin": "0x0000000000000000000000000000000000000000",
+      "router": "0x0000000000000000000000000000000000000000",
+      "standardGateway": "0x0000000000000000000000000000000000000000",
+      "weth": "0x0000000000000000000000000000000000000000",
+      "wethGateway": "0x0000000000000000000000000000000000000000"
+    },
+    "l3Contracts": {
+      "customGateway": "0x0000000000000000000000000000000000000000",
+      "multicall": "0x0000000000000000000000000000000000000000",
+      "proxyAdmin": "0x0000000000000000000000000000000000000000",
+      "router": "0x0000000000000000000000000000000000000000",
+      "standardGateway": "0x0000000000000000000000000000000000000000",
+      "weth": "0x0000000000000000000000000000000000000000",
+      "wethGateway": "0x0000000000000000000000000000000000000000"
+    }
+  }
+}
