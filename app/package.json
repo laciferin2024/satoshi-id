@@ -2,6 +2,8 @@
   "name": "@gitcoin/passport-app",
   "private": true,
   "version": "1.0.0",
+  "proxy": "http://localhost:7007",
+
   "scripts": {
     "prestart": "ceramic daemon &",
     "start": "next dev",
