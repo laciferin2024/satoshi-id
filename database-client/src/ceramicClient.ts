@@ -13,7 +13,8 @@ import { StreamID } from "@ceramicnetwork/streamid";
 import { DataStorageBase } from "./types";
 
 // const LOCAL_CERAMIC_CLIENT_URL = "http://localhost:7007";
-const COMMUNITY_TESTNET_CERAMIC_CLIENT_URL = "https://ceramic-clay.3boxlabs.com";
+// const COMMUNITY_TESTNET_CERAMIC_CLIENT_URL = "https://ceramic-clay.3boxlabs.com";
+const COMMUNITY_TESTNET_CERAMIC_CLIENT_URL = "http://localhost:7007";
 
 type CeramicStamp = {
   provider: string;
@@ -59,6 +60,8 @@ export class CeramicDatabase implements DataStorageBase {
     } else {
       this.logger = console;
     }
+
+    console.log({ceramicHost})
 
     // Create the Ceramic instance and inject the DID
     const ceramic = new CeramicClient(ceramicHost ?? COMMUNITY_TESTNET_CERAMIC_CLIENT_URL);

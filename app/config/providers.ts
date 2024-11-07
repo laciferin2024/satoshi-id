@@ -22,6 +22,25 @@ export type Providers = {
 };
 
 export const STAMP_PROVIDERS: Readonly<Providers> = {
+  Babylon: [
+    {
+      platformGroup: "Staking Period",
+      providers: [
+        {
+          title: "1 week",
+          name: "1wk",
+        },
+        {
+          title: "2 week",
+          name: "2wk",
+        },
+        {
+          title: "3 week",
+          name: "3wk",
+        },
+      ],
+    }
+  ],
   Google: [{ platformGroup: "Account Name", providers: [{ title: "Google", name: "Google" }] }],
   Ens: [
     {

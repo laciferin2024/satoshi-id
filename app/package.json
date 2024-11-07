@@ -5,7 +5,7 @@
   "proxy": "http://localhost:7007",
 
   "scripts": {
-    "ceramic": "ceramic daemon",
+    "ceramic": "ceramic daemon --network inmemory",
     "start": "next dev",
     "export": "next build && next export",
     "build": "next build",

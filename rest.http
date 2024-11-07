@@ -28,5 +28,27 @@ Content-Type: application/json
 
 {"type":0,"genesis":{"header":{"controllers":["did:pkh:eip155:1:0xf399d47eaed7bb1e07a62adc6893e198acc94150"],"family":"IDX"}},"opts":{"anchor":true,"publish":true,"sync":0,"pin":true}}
 
+#### Commit
+POST http://localhost:7007/api/v0/commits
+Content-Type: application/json
+
+{"streamId":"k2t6wyfsu4pfykwkovpgh28wopg7sq5o4oloopss2rsab7plgo7qrt8897n6q2","commit":{"jws":{"payload":"AXESIHfBRYIZo5QTZXrm3hZq-xq0NKiW9YqZfarQx8HuUYTK","signatures":[{"protected":"eyJhbGciOiJFZERTQSIsImNhcCI6ImlwZnM6Ly9iYWZ5cmVpZGR1bmRvaHRtbmJndXhwaGZzZ2k2MnpqeHRwcTZ0ZXkzaHVqb3ltZTVsaG1lbXkyeXRlNCIsImtpZCI6ImRpZDprZXk6ejZNa3ZKNmUzTk1NM2ExYVBwam13bmVaMktXd2VxQ2dIdG8zWENjTXl2TTJwSDdMI3o2TWt2SjZlM05NTTNhMWFQcGptd25lWjJLV3dlcUNnSHRvM1hDY015dk0ycEg3TCJ9","signature":"3pyYqb01Js94xP2NQVc53OXWluwDbFc-s3WqP3IERnzAY3IjlSdzPRFzQjhFLx39ZapQYX4D6SC6btf2RxD2CA"}],"link":"bafyreidxyfcyegndsqjwk6xg3ylgv6y2wq2krfxvrkmx3kwqy7a64umezi"},"linkedBlock":"pGJpZNgqWCUAAXESIEv37r/E7kxvh8/U6+D6Rg2AQdTuy7BMaUrP8sWypyzKZGRhdGGAZHByZXbYKlglAAFxEiBL9+6/xO5Mb4fP1Ovg+kYNgEHU7suwTGlKz/LFsqcsymZoZWFkZXKhZnNjaGVtYXhLY2VyYW1pYzovL2szeTUybDdxYnYxZnJ5am42MnNnZ2poMWxwbjExYzU2cWZvZnptdHkxOTBkNjJod2sxY2FsMWM3cWM1aGU1NG93","cacaoBlock":"o2FooWF0Z2VpcDQzNjFhcKljYXVkeDhkaWQ6a2V5Ono2TWt2SjZlM05NTTNhMWFQcGptd25lWjJLV3dlcUNnSHRvM1hDY015dk0ycEg3TGNleHB4GDIwMjQtMTEtMDhUMTk6MzU6MzIuOTkxWmNpYXR4GDIwMjQtMTEtMDdUMTk6MzU6MzIuOTkxWmNpc3N4PmRpZDpwa2g6ZWlwMTU1OjE2MTY6MHhmMzk5ZDQ3ZWFlZDdiYjFlMDdhNjJhZGM2ODkzZTE5OGFjYzk0MTUwZW5vbmNlam5GcVJFbEpwZ3BmZG9tYWluaWxvY2FsaG9zdGd2ZXJzaW9uYTFpcmVzb3VyY2VzgWtjZXJhbWljOi8vKmlzdGF0ZW1lbnR4PEdpdmUgdGhpcyBhcHBsaWNhdGlvbiBhY2Nlc3MgdG8gc29tZSBvZiB5b3VyIGRhdGEgb24gQ2VyYW1pY2FzomFzeIQweDcwYjM1ODFjOTgwNTJmZTBhNTNkYmFmNDk4OTlhOWIyNWU5ZjQxZTQyYzQyOWUwOWE5ZDIzNzY5NDIyMDNlY2M0M2E0ODY5NWY2MDdiNTMyNzkzMGU2Zjc4ZjUyZWNkYWIxMGRiNzEyZDJlYjI0MjkxNTQzMmM3OTEwMGVhOTRiMWNhdGZlaXAxOTE"},"opts":{"anchor":true,"publish":true,"sync":0}}
+
+### Health check
+
+# curl http://localhost:7007/api/v0/node/healthcheck
+GET http://localhost:7007/api/v0/node/healthcheck
+
 ###
+
+# curl http://127.0.0.1:5101/ceramic/liveness
+GET http://127.0.0.1:5101/ceramic/liveness
+
+###
+# curl http://127.0.0.1:9464/metrics # ceramic-one metrics
+GET http://127.0.0.1:9464/metrics
+
+
+###
+
 
