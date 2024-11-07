@@ -5,7 +5,7 @@
   "proxy": "http://localhost:7007",
 
   "scripts": {
-    "prestart": "ceramic daemon &",
+    "ceramic": "ceramic daemon",
     "start": "next dev",
     "export": "next build && next export",
     "build": "next build",
