@@ -1,0 +1,24 @@
+# curl http://localhost:7007/api/v0/streams -X POST -d '{
+#    "type": 0,
+#    "genesis": {
+#      "header": {
+#        "family": "test",
+#        "controllers": ["did:key:z6MkfZ6S4NVVTEuts8o5xFzRMR8eC6Y1bngoBQNnXiCvhH8H"]
+#      }
+#    }
+#  }' -H "Content-Type: application/json"
+POST http://localhost:7007/api/v0/streams
+Content-Type: application/json
+
+{
+    "type": 0,
+    "genesis": {
+      "header": {
+        "family": "test",
+        "controllers": ["did:key:z6MkfZ6S4NVVTEuts8o5xFzRMR8eC6Y1bngoBQNnXiCvhH8H"]
+      }
+    }
+  }
+
+###
+

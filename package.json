@@ -43,7 +43,7 @@
     "start:iam": "yarn workspace @gitcoin/passport-iam start",
     "start:signer": "yarn workspace @gitcoin/passport-signer start",
     "start:app": "yarn workspace @gitcoin/passport-app start",
-    "start:ceramic": "yarn ceramic daemon",
+    "start:ceramic": "ceramic daemon",
     "prod:start:iam": "yarn workspace @gitcoin/passport-iam prod:start",
     "app": "yarn workspace @gitcoin/passport-app",
     "schemas": "yarn workspace @gitcoin/passport-schemas",
