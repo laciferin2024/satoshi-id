@@ -47,10 +47,11 @@ type SelectedProviders = Record<PLATFORM_ID, PROVIDER_ID[]>;
 
 export const providers = new Map<PLATFORM_ID, PlatformProps>();
 
-providers.set("Babylon", {
-  platform: new ,//TODO
-  platFormGroupSpec:
-})
+// TODO:
+// providers.set("Babylon", {
+//   platform: new Babylon.Babylon
+//   platFormGroupSpec:
+// })
 providers.set("Twitter", {
   platform: new Twitter.TwitterPlatform(),
   platFormGroupSpec: Twitter.TwitterProviderConfig,
